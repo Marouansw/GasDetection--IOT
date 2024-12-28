@@ -11,8 +11,9 @@ This project aims to design an intelligent IoT system capable of detecting gas l
 ![App Screenshot](images/1.jpeg)
 ### Gas Leaking State ❗
 <div align="center">
-<img src="images/2.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/2.jpeg" alt="Image description" width="600" height="450" >
 </div>
+
 ## Usage 💡
 * This system is ideal for **domestic**, **industrial**, or **confined spaces** where gas leaks pose a significant danger. Its modular and scalable design allows for the addition of extra features, such as wireless connectivity for remote notifications or integration with home automation systems.
 * The project combines **detection**, **alerting**, and **proactive response**, providing a comprehensive solution to enhance safety and protect users from the dangers associated with gas leaks.
@@ -31,26 +32,27 @@ This project aims to design an intelligent IoT system capable of detecting gas l
 ## System's Connection Details ⛓️
 ### MQ-6 Gas sensor
 <div align="center">
-<img src="images/3.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/3.jpeg" alt="Image description" width="600" height="450" >
 </div>
 
 ### LEDs ⭕🟢
 <div align="center">
-<img src="images/4.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/4.jpeg" alt="Image description" width="600" height="450" >
 </div>
 
 <div align="center">
-<img src="images/5.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/5.jpeg" alt="Image description" width="600" height="450" >
 </div>
 
 ### Buzzer 🔊
 <div align="center">
-<img src="images/6.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/6.jpeg" alt="Image description" width="600" height="450" >
 </div>
 
 <div align="center">
-<img src="images/7.jpeg" alt="Image description" width="700" height="500" >
+<img src="images/7.jpeg" alt="Image description" width="600" height="450" >
 </div>
+
 ## Things we will improve 📈
 
 **Adding Wi-Fi Connectivity (IoT)**
