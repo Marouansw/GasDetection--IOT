@@ -14,9 +14,12 @@ This project aims to design an intelligent IOT system capable of detecting gas l
 ### Normal State ✅
 ![App Screenshot](images/normal1.jpeg)
 
-![App Screenshot](images/normal2.jpeg)
+<div align="center">
+<img src="images/normal2.jpeg" alt="Image description" width="650" height="450"></div>
+
 ### Gas Leaking State ❗
-![App Screenshot](images/danger.jpeg)
+<div align="center">
+<img src="images/danger.jpeg" alt="Image description" width="650" height="450"></div>
 
 ## Usage 💡
 * This system is ideal for **domestic**, **industrial**, or **confined spaces** where gas leaks pose a significant danger. Its modular and scalable design allows for the addition of extra features, such as wireless connectivity for remote notifications or integration with home automation systems.
@@ -64,14 +67,20 @@ This project aims to design an intelligent IOT system capable of detecting gas l
 * If no current is applied to the base → The transistor is OFF (acts like an open switch).
 * If a small current flows into the base → The transistor turns ON, allowing a larger current to flow from collector to emitter powering the fan
 * The base is controlled via Pin 5 of arduino
-T![App Screenshot](images/fan.jpeg)
+<div align="center">
+<img src="images/fan.jpeg" alt="Image description" width="650" height="450" >
+</div>
 
 ### Capacitor 
-T![App Screenshot](images/capacitor.jpeg)
+<div align="center">
+<img src="images/capacitor.jpeg" alt="Image description" width="650" height="450" >
+</div>
 
 ### 800L GSM Module 
-T![App Screenshot](images/gsm1.jpeg)
-
-T![App Screenshot](images/gsm2.jpeg)
-
+<div align="center">
+<img src="images/gsm1.jpeg" alt="Image description" width="650" height="450" >
+</div>
+<div align="center">
+<img src="images/gsm2.jpeg" alt="Image description" width="650" height="450" >
+</div>
 
