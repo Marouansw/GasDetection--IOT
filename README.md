@@ -1,18 +1,22 @@
+
+
 # IOT based Intelligent Gas Leakage Detector Using Arduino 
 
 ## Overview 🔍
-This project aims to design an intelligent IoT system capable of detecting gas leaks in a given environment. The system uses a gas sensor connected to an Arduino board to monitor, in real-time, the concentrations of flammable or toxic gases. Upon detecting a dangerous concentration exceeding a defined threshold, the system automatically activates a series of safety measures: 
-#### *Visual and Sound Alerts :*
-* **A red LED lights up**, and a **buzzer emits a sound signal** to warn occupants in the area.
-* **Fan Activation** : A fan is activated to ventilate the environment and reduce gas concentration, thereby minimizing the risks of explosion or poisoning.
+This project aims to design an intelligent IOT system capable of detecting gas leaks in a given environment. The system uses a gas sensor connected to an Arduino board to monitor, in real-time, the concentrations of flammable or toxic gases. Upon detecting a dangerous concentration exceeding a defined threshold, the system automatically activates a series of safety measures: 
+### 🚨*Safety features :*
+* 🔴  **A red LED lights up**, and a **buzzer 🔊emits a sound signal** to warn occupants in the area.
+* 💨 **Fan Activation** : A fan is activated to ventilate the environment and reduce gas concentration, thereby minimizing the risks of explosion or poisoning.
+* 📞 **Automated Emergency Call** : The system uses a SIM800L GSM module to automatically call the user when a gas leak is detected. 
+  * This ensures immediate action can be taken, even if no one is present at the location.
 
 ## What The Project Looks Like 💁‍♂️
 ### Normal State ✅
-![App Screenshot](images/1.jpeg)
+![App Screenshot](images/normal1.jpeg)
+
+![App Screenshot](images/normal2.jpeg)
 ### Gas Leaking State ❗
-<div align="center">
-<img src="images/2.jpeg" alt="Image description" width="600" height="450" >
-</div>
+![App Screenshot](images/danger.jpeg)
 
 ## Usage 💡
 * This system is ideal for **domestic**, **industrial**, or **confined spaces** where gas leaks pose a significant danger. Its modular and scalable design allows for the addition of extra features, such as wireless connectivity for remote notifications or integration with home automation systems.
@@ -26,8 +30,11 @@ This project aims to design an intelligent IoT system capable of detecting gas l
 * Breadboard 
 * Green LED 5mm  (normal status)
 * Red LED 5mm  (danger status)
+* Transistor
 * Active Buzzer 5V
 * 5V DC brushless Fan
+* Capacitor 470 uF 16 V
+* SIM800L V1 Module GSM GPRS
 
 ## System's Connection Details ⛓️
 ### MQ-6 Gas sensor
@@ -53,15 +60,18 @@ This project aims to design an intelligent IoT system capable of detecting gas l
 <img src="images/7.jpeg" alt="Image description" width="600" height="450" >
 </div>
 
-## Things we will improve 📈
+### Transistor & Fan 💨
+* If no current is applied to the base → The transistor is OFF (acts like an open switch).
+* If a small current flows into the base → The transistor turns ON, allowing a larger current to flow from collector to emitter powering the fan
+* The base is controlled via Pin 5 of arduino
+T![App Screenshot](images/fan.jpeg)
 
-**Adding Wi-Fi Connectivity (IoT)**
+### Capacitor 
+T![App Screenshot](images/capacitor.jpeg)
 
-Connecting the system to the internet would allow remote monitoring of the data via a dashboard or mobile application.
-Send sensor-detected values to a platform like ThingSpeak or Firebase to visualize the data in real time.
+### 800L GSM Module 
+T![App Screenshot](images/gsm1.jpeg)
 
-**Adding SMS Alerts** 🚨
+T![App Screenshot](images/gsm2.jpeg)
 
-In case of a gas leak, an SMS alert can be sent to the owner or user.
-Integrating a GSM module to send an SMS message.
-Once gas is detected, we'll use the module to send an SMS with information such as: "Leak detected on [date and time]."
+
