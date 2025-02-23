@@ -21,7 +21,9 @@ This project aims to design an intelligent IOT system capable of detecting gas l
 <div align="center">
 <img src="images/danger.jpeg" alt="Image description" width="690" height="450"></div>
 
-![App Screenshot](images/gaz_leaking.png)
+<div align="center">
+<img src="images/gaz_leaking.png" alt="Image description" width="431" height="860" >
+</div>
 
 ## Usage 💡
 * This system is ideal for **domestic**, **industrial**, or **confined spaces** where gas leaks pose a significant danger. Its modular and scalable design allows for the addition of extra features, such as wireless connectivity for remote notifications or integration with home automation systems.

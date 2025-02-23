@@ -42,7 +42,7 @@ void loop() {
     delay(4000); // Wait for stability
     Serial.println("GAS LEAKING !!, Value: " + String(val));
     Serial.println("Ready to make a call...");
-    sim800l.println("ATD+212663109100;");
+    sim800l.println("ATD+212690024946;"); // Replace with your phone number 
     delay(20000); // Ensure the call lasts at least 20 seconds
     // Hang up the call
     sim800l.println("ATH");
