@@ -15,11 +15,13 @@ This project aims to design an intelligent IOT system capable of detecting gas l
 ![App Screenshot](images/normal1.jpeg)
 
 <div align="center">
-<img src="images/normal2.jpeg" alt="Image description" width="650" height="450"></div>
+<img src="images/normal2.jpeg" alt="Image description" width="690" height="450"></div>
 
 ### Gas Leaking State ❗
 <div align="center">
-<img src="images/danger.jpeg" alt="Image description" width="650" height="450"></div>
+<img src="images/danger.jpeg" alt="Image description" width="690" height="450"></div>
+
+![App Screenshot](images/gaz_leaking.png)
 
 ## Usage 💡
 * This system is ideal for **domestic**, **industrial**, or **confined spaces** where gas leaks pose a significant danger. Its modular and scalable design allows for the addition of extra features, such as wireless connectivity for remote notifications or integration with home automation systems.
@@ -68,19 +70,21 @@ This project aims to design an intelligent IOT system capable of detecting gas l
 * If a small current flows into the base → The transistor turns ON, allowing a larger current to flow from collector to emitter powering the fan
 * The base is controlled via Pin 5 of arduino
 <div align="center">
-<img src="images/fan.jpeg" alt="Image description" width="650" height="450" >
+<img src="images/fan.jpeg" alt="Image description" width="690" height="450" >
 </div>
 
 ### Capacitor 
+* Using a capacitor with the SIM800L GSM module is necessary because the module requires a high current surge (up to 2A during transmission), which most power supplies (especially from Arduino's 5V or 3.3V pin) cannot provide consistently. If the power supply is unstable, the module may restart, hang, or fail to connect to the network.
+* When the module transmits, it suddenly draws high current. A capacitor acts as a temporary power reservoir.
 <div align="center">
-<img src="images/capacitor.jpeg" alt="Image description" width="650" height="450" >
+<img src="images/capacitor.jpeg" alt="Image description" width="690" height="450" >
 </div>
 
 ### 800L GSM Module 
 <div align="center">
-<img src="images/gsm1.jpeg" alt="Image description" width="650" height="450" >
+<img src="images/gsm1.jpeg" alt="Image description" width="690" height="450" >
 </div>
 <div align="center">
-<img src="images/gsm2.jpeg" alt="Image description" width="650" height="450" >
+<img src="images/gsm2.jpeg" alt="Image description" width="690" height="450" >
 </div>
 
